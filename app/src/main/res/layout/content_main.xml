@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".View.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:menu="@menu/navigation" />
+
+    <TextView
+        android:id="@+id/tvMensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/includeCartao"
+        android:layout_alignParentStart="true"
+        android:text="Extrato do cartão"
+        android:textAlignment="center" />
+
+    <ProgressBar
+        android:id="@+id/progressLoad"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/progress_bar"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/includeCartao"
+        layout="@layout/card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp" />
+
+    <include
+        android:id="@+id/includeFiltro"
+        layout="@layout/filtros_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/includeCartao" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+        android:layout_alignBottom="@+id/navigationButton"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/includeFiltro"
+        android:layout_marginBottom="45dp" />
+
+</RelativeLayout>

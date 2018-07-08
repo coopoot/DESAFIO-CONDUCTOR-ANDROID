@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_card"
+        android:icon="@mipmap/ic_card"
+        android:title="Cartão"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/navigation_graficos"
+        android:icon="@mipmap/ic_graficos"
+        android:title="Graficos"
+        app:showAsAction="ifRoom" />
+
+</menu>

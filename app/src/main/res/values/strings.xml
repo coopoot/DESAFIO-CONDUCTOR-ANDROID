@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DESAFIO-CONDUCTOR-ANDROID</string>
+    <string name="navigation_drawer_open">Abrir</string>
+    <string name="navigation_drawer_close">Fechar</string>
+</resources>

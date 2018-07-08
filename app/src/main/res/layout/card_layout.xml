@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeCartao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <ImageView
+            android:id="@+id/imgBackground"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:srcCompat="@drawable/background_blue_card" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvNumero"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Gasto"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tvDisponivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView4"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:text="R$ 0"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView4"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Disponível"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/imgBandeira"
+            android:layout_width="85dp"
+            android:layout_height="72dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@mipmap/ic_bandeira" />
+
+        <TextView
+            android:id="@+id/tvNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgBandeira"
+            android:layout_centerHorizontal="true"
+            android:text="xxxx xxxx xxxx 4050"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tvGasto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvNumero"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:text="R$ 0"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeGrafico"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barchart"
+            android:layout_width="match_parent"
+            android:layout_height="160dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
