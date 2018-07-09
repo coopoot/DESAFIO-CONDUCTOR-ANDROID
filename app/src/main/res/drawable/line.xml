@@ -5,6 +5,6 @@
         android:width="3dp"
         android:height="20dp"
         android:drawable="@color/azul"
-        android:left="-16dp" />
+        android:left="-10dp" />
 
 </layer-list>
